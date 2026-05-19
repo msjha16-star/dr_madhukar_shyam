@@ -1,3 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Research & Publications |
+Dr. Madhukar Shyam
+</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+<style>
+
+:root{
+
+  --primary:#1e3a5f;
+  --secondary:#2563eb;
+  --light:#f8fafc;
+  --dark:#1f2937;
+  --accent:#0f766e;
+
+}
+
+body{
+
+  background:var(--light);
+  font-family:"Segoe UI",sans-serif;
+  color:var(--dark);
+
+}
+
+/* NAVBAR */
+
+nav{
+
+  background:white;
+  padding:1rem 2rem;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+}
+
+nav ul{
+
+  align-items:center;
+
+}
+
+nav strong{
+
+  color:var(--primary);
+  font-size:1.2rem;
+
+}
+
+nav a{
+
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:500;
+
+}
+
+nav a:hover{
+
+  color:var(--secondary);
+
+}
+
+/* MAIN */
+
+main.container{
+
+  padding:3rem 1rem;
+
+}
+
+.page-title{
+
+  text-align:center;
+  margin-bottom:4rem;
+
+}
+
+.page-title h1{
+
+  color:var(--primary);
+  margin-bottom:1rem;
+
+}
+
+.page-title p{
+
+  color:#555;
+  font-size:1.1rem;
+  max-width:850px;
+  margin:auto;
+  line-height:1.9;
+
+}
+
+/* SECTION */
+
+section{
+
+  margin-top:5rem;
+
+}
+
+section h2{
+
+  color:var(--primary);
+  margin-bottom:2rem;
+  border-left:6px solid var(--accent);
+  padding-left:1rem;
+
+}
+
+/* CARDS */
+
+.publication-list{
+
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+
+}
+
+.publication-card{
+
+  background:white;
+  border-radius:18px;
+  padding:2rem;
+  box-shadow:0 10px 28px rgba(0,0,0,0.06);
+  transition:0.3s;
+  border-left:6px solid var(--primary);
+
+}
+
+.publication-card:hover{
+
+  transform:translateY(-5px);
+  box-shadow:0 14px 35px rgba(0,0,0,0.08);
+
+}
+
+.publication-card h3{
+
+  color:var(--primary);
+  margin-bottom:1rem;
+  line-height:1.6;
+  font-size:1.35rem;
+
+}
+
+.journal{
+
+  color:var(--accent);
+  font-weight:600;
+  margin-bottom:1rem;
+
+}
+
+.publication-card p{
+
+  line-height:1.9;
+
+}
+
+.publication-meta{
+
+  margin-top:1.5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:1rem;
+
+}
+
+.year{
+
+  background:#dbeafe;
+  color:var(--primary);
+  padding:0.4rem 1rem;
+  border-radius:30px;
+  font-size:0.9rem;
+  font-weight:600;
+
+}
+
+.read-btn{
+
+  background:var(--primary);
+  color:white !important;
+  text-decoration:none;
+  padding:0.8rem 1.3rem;
+  border-radius:8px;
+  font-weight:600;
+  transition:0.3s;
+
+}
+
+.read-btn:hover{
+
+  background:var(--secondary);
+
+}
+
+/* FOOTER */
+
+footer{
+
+  margin-top:5rem;
+  padding:2rem;
+  text-align:center;
+  border-top:1px solid #ddd;
+
+}
+
+footer a{
+
+  color:var(--primary);
+  text-decoration:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="container-fluid">
+
+<ul>
+
+<li>
+
+<strong>
+Dr. Madhukar Shyam
+</strong>
+
+</li>
+
+</ul>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="academics.html">
+Academic Details
+</a></li>
+
+<li><a href="research.html"
+role="button">
+
+Research
+
+</a></li>
+
+<li><a href="contact.html">
+Contact
+</a></li>
+
+</ul>
+
+</nav>
+
+<!-- MAIN -->
+
+<main class="container">
+
+<div class="page-title">
+
+<h1>
+Research & Publications
+</h1>
+
+<p>
+
+Research contributions in
+International Relations,
+India-China relations,
+strategic affairs,
+maritime security,
+Indo-Pacific geopolitics,
+foreign policy analysis,
+and global governance.
+
+</p>
+
+</div>
+
 <!-- JOURNAL ARTICLES -->
 
 <section>
@@ -6,105 +309,112 @@
 Journal Articles
 </h2>
 
-<div class="card-grid">
+<div class="publication-list">
 
-<div class="card">
+<div class="publication-card">
 
 <h3>
-India’s Response to Chinese BRI
+India’s Response to Chinese BRI:
+Analysing Geopolitical Implications
+and Regional Cooperation
 </h3>
 
-<p>
-
-Analysing geopolitical implications
-and regional cooperation dynamics.
-
-Published in Strategic Perspectives,
-United Services Institution of India.
-
+<p class="journal">
+Strategic Perspectives,
+United Services Institution of India
 </p>
 
 <p>
-
-🔗
-<a href="https://www.usiofindia.org/strategic-perspective/India-Response-to-Chinese-BRI-Analysing-Geopolitical-Implications-and-Regional-Cooperation.html"
-target="_blank">
-
-Read Article
-
-</a>
-
+Analysis of India’s strategic response
+to China’s Belt and Road Initiative
+and implications for regional order.
 </p>
+
+<div class="publication-meta">
 
 <span class="year">
 2023
 </span>
 
+<a href="https://www.usiofindia.org/strategic-perspective/India-Response-to-Chinese-BRI-Analysing-Geopolitical-Implications-and-Regional-Cooperation.html"
+target="_blank"
+class="read-btn">
+
+Read Article →
+
+</a>
+
 </div>
 
-<div class="card">
+</div>
+
+<div class="publication-card">
 
 <h3>
 China’s View on the US Role
-in Indo-Pacific
+in the Indo-Pacific
 </h3>
 
-<p>
-
-Strategic analysis of Chinese discourse
-on the Indo-Pacific and evolving
-regional security frameworks.
-
+<p class="journal">
+Strategic Perspectives,
+USI of India
 </p>
 
 <p>
-
-🔗
-<a href="https://www.usiofindia.org/strategic-perspective/chinas-view-on-the-us-role-in-the-indo-pacific.html"
-target="_blank">
-
-Read Article
-
-</a>
-
+Chinese strategic perception
+of Indo-Pacific security architecture
+and American influence.
 </p>
+
+<div class="publication-meta">
 
 <span class="year">
 2022
 </span>
+
+<a href="https://www.usiofindia.org/strategic-perspective/chinas-view-on-the-us-role-in-the-indo-pacific.html"
+target="_blank"
+class="read-btn">
+
+Read Article →
+
+</a>
 
 </div>
 
-<div class="card">
+</div>
+
+<div class="publication-card">
 
 <h3>
-Chinese Role in the
-Sri Lankan Financial Crisis
+Chinese Discourse on XUAR
 </h3>
 
-<p>
-
-Analysis of Chinese involvement
-in Sri Lanka and India’s strategic
-response.
-
+<p class="journal">
+Strategic Perspectives
 </p>
 
 <p>
-
-🔗
-<a href="https://www.usiofindia.org/publication-journal/Chinese-Role-in-the-Sri-Lankan-Financial-Crisis-and-India-Reaction.html"
-target="_blank">
-
-Read Article
-
-</a>
-
+Study on Chinese political narratives,
+governance,
+and discourse surrounding XUAR.
 </p>
+
+<div class="publication-meta">
 
 <span class="year">
 2022
 </span>
+
+<a href="https://www.usiofindia.org/strategic-perspective/Chinese-Discourse-on-XUAR-Madhukar-Shyam.html"
+target="_blank"
+class="read-btn">
+
+Read Article →
+
+</a>
+
+</div>
 
 </div>
 
@@ -120,23 +430,30 @@ Read Article
 Book Chapters
 </h2>
 
-<div class="card-grid">
+<div class="publication-list">
 
-<div class="card">
+<div class="publication-card">
 
 <h3>
 India’s Civilisational Identity
-and Soft Power
+and Soft Power:
+Shaping Foreign Policy
+in Global South
 </h3>
 
-<p>
-
-Chapter discussing India’s
-civilisational diplomacy and
-its role in shaping foreign policy
-within the Global South.
-
+<p class="journal">
+Oakbridge CRF
 </p>
+
+<p>
+Discussion on India’s civilisational
+identity,
+soft power,
+and strategic engagement
+with the Global South.
+</p>
+
+<div class="publication-meta">
 
 <span class="year">
 2025
@@ -144,24 +461,32 @@ within the Global South.
 
 </div>
 
-<div class="card">
+</div>
+
+<div class="publication-card">
 
 <h3>
 Popular Culture as Agent
-of Gender Socialisation
+of Gender Socialisation in India
 </h3>
 
-<p>
-
-Analysis of popular culture
-and women-led development
-within contemporary India.
-
+<p class="journal">
+Women-Led Development @2047
 </p>
+
+<p>
+Study on popular culture
+and gender socialisation
+in the Indian context.
+</p>
+
+<div class="publication-meta">
 
 <span class="year">
 2025
 </span>
+
+</div>
 
 </div>
 
@@ -169,7 +494,7 @@ within contemporary India.
 
 </section>
 
-<!-- BOOKS -->
+<!-- EDITED BOOK -->
 
 <section>
 
@@ -177,27 +502,34 @@ within contemporary India.
 Books & Edited Volumes
 </h2>
 
-<div class="card-grid">
+<div class="publication-list">
 
-<div class="card">
+<div class="publication-card">
 
 <h3>
 Economic Thought of India and China
+as an Alternative Western Model
+of Development
 </h3>
 
-<p>
-
-Contribution to edited volume
-on globalization and alternative
-development models in India and China.
-
-Published by Bloomsbury.
-
+<p class="journal">
+Bloomsbury Publication
 </p>
+
+<p>
+Contribution to edited volume
+on globalization,
+economic thought,
+and alternative development models.
+</p>
+
+<div class="publication-meta">
 
 <span class="year">
 2017
 </span>
+
+</div>
 
 </div>
 
@@ -213,108 +545,188 @@ Published by Bloomsbury.
 Opinion Articles & Policy Writing
 </h2>
 
-<div class="card-grid">
+<div class="publication-list">
 
-<div class="card">
+<div class="publication-card">
 
 <h3>
-Federalism in India
+Federalism in India:
+What You Need to Know
 </h3>
 
-<p>
+<p class="journal">
+The Indian Express
+</p>
 
+<p>
 Explaining Indian federalism,
-governance structure,
-and constitutional framework.
-
-Published in The Indian Express.
-
+constitutional structure,
+and centre-state relations.
 </p>
 
-<p>
-
-🔗
-<a href="https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/federalism-in-india-what-you-need-to-know-upsc-9369117/"
-target="_blank">
-
-Read Article
-
-</a>
-
-</p>
+<div class="publication-meta">
 
 <span class="year">
 2024
 </span>
 
+<a href="https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/federalism-in-india-what-you-need-to-know-upsc-9369117/"
+target="_blank"
+class="read-btn">
+
+Read Article →
+
+</a>
+
 </div>
 
-<div class="card">
+</div>
+
+<div class="publication-card">
 
 <h3>
-Election Process in India
+Election Commission of India:
+Composition,
+Powers and Functions
 </h3>
 
-<p>
-
-Discussion on India’s electoral
-process and democratic institutions.
-
-Published in The Indian Express.
-
+<p class="journal">
+The Indian Express
 </p>
 
 <p>
-
-🔗
-<a href="https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/election-process-in-india-how-the-worlds-largest-democracy-votes-9552056/"
-target="_blank">
-
-Read Article
-
-</a>
-
+Detailed explanation of the
+Election Commission’s constitutional role
+and electoral governance.
 </p>
+
+<div class="publication-meta">
 
 <span class="year">
 2024
 </span>
 
+<a href="https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/election-commission-of-india-powers-and-functions-upsc-9525675/"
+target="_blank"
+class="read-btn">
+
+Read Article →
+
+</a>
+
 </div>
 
-<div class="card">
+</div>
+
+<div class="publication-card">
 
 <h3>
 Global Scenario and
 India’s Presidency in G20
 </h3>
 
-<p>
-
-Analysis of India’s role
-in global governance and
-G20 diplomacy.
-
+<p class="journal">
+The Kootneeti
 </p>
 
 <p>
-
-🔗
-<a href="https://thekootneeti.in/2023/02/15/global-scenario-and-indias-presidency-in-g20/"
-target="_blank">
-
-Read Article
-
-</a>
-
+Analysis of India’s G20 presidency
+and changing global geopolitical order.
 </p>
+
+<div class="publication-meta">
 
 <span class="year">
 2023
 </span>
+
+<a href="https://thekootneeti.in/2023/02/15/global-scenario-and-indias-presidency-in-g20/"
+target="_blank"
+class="read-btn">
+
+Read Article →
+
+</a>
+
+</div>
 
 </div>
 
 </div>
 
 </section>
+
+<!-- REPORTS -->
+
+<section>
+
+<h2>
+Reports & Strategic Publications
+</h2>
+
+<div class="publication-list">
+
+<div class="publication-card">
+
+<h3>
+Silicon Battleground Report
+</h3>
+
+<p class="journal">
+Red Lantern Analytica
+</p>
+
+<p>
+Strategic report analysing
+global semiconductor geopolitics,
+technology competition,
+and strategic supply chains.
+</p>
+
+<div class="publication-meta">
+
+<span class="year">
+2025
+</span>
+
+<a href="https://redlanternanalytica.com/silicon-battleground-report-by-red-lantern-analytica/"
+target="_blank"
+class="read-btn">
+
+View Report →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Dr. Madhukar Shyam
+</p>
+
+<p>
+
+<a href="index.html">
+
+Back to Home
+
+</a>
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
