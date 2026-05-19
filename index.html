@@ -1,77 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr Madhukar Shyam</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    Dr. Madhukar Shyam |
+    International Relations Scholar
+  </title>
+
+  <meta name="description"
+    content="Official academic website of Dr. Madhukar Shyam, Assistant Professor at Christ University specializing in International Relations, India-China relations, maritime security and strategic affairs." />
+
+  <!-- PICO CSS -->
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"/>
+
+  <style>
+
+    :root{
+
+      --primary:#1e3a5f;
+      --secondary:#2563eb;
+      --light:#f8fafc;
+      --dark:#1f2937;
+      --accent:#0f766e;
+
+    }
+
+    body{
+
+      background:var(--light);
+      color:var(--dark);
+      font-family:"Segoe UI",sans-serif;
+
+    }
+
+    /* NAVBAR */
+
+    nav{
+
+      background:white;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      padding:1rem 2rem;
+      position:sticky;
+      top:0;
+      z-index:1000;
+
+    }
+
+    nav .brand{
+
+      font-size:1.4rem;
+      font-weight:700;
+      color:var(--primary);
+
+    }
+
+    nav .menu{
+
+      display:flex;
+      gap:1rem;
+      align-items:center;
+
+    }
+
+    nav .menu a{
+
+      text-decoration:none;
+      color:var(--primary);
+      font-weight:500;
+
+    }
+
+    nav .menu a:hover{
+
+      color:var(--secondary);
+
+    }
+
+    nav .hamburger{
+
+      display:none;
+      font-size:1.5rem;
+      cursor:pointer;
+
+    }
+
+    @media(max-width:768px){
+
+      nav{
+
+        padding:1rem;
+
+      }
+
+      nav .menu{
+
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:1rem;
+
+      }
+
+      nav .menu.show{
+
+        display:flex;
+
+      }
+
+      nav .hamburger{
+
+        display:block;
+
+      }
+
+    }
+
+    /* HERO */
+
+    .hero{
+
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:3rem;
+      padding:4rem 0;
+      flex-wrap:wrap;
+
+    }
+
+    .hero-text{
+
+      flex:1;
+      min-width:300px;
+
+    }
+
+    .hero-text h1{
+
+      font-size:3rem;
+      margin-bottom:0.5rem;
+      color:var(--primary);
+
+    }
+
+    .hero-text h2{
+
+      font-size:1.4rem;
+      color:#4b5563;
+      margin-bottom:1rem;
+
+    }
+
+    .hero-text p{
+
+      font-size:1.1rem;
+      line-height:1.9;
+
+    }
+
+    .hero-buttons{
+
+      margin-top:2rem;
+      display:flex;
+      gap:1rem;
+      flex-wrap:wrap;
+
+    }
+
+    .hero-buttons a{
+
+      padding:0.8rem 1.2rem;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+
+    }
+
+    .primary-btn{
+
+      background:var(--primary);
+      color:white;
+
+    }
+
+    .primary-btn:hover{
+
+      background:var(--secondary);
+      color:white;
+
+    }
+
+    .secondary-btn{
+
+      border:2px solid var(--primary);
+      color:var(--primary);
+
+    }
+
+    .secondary-btn:hover{
+
+      background:var(--primary);
+      color:white;
+
+    }
+
+    .hero-image img{
+
+      width:270px;
+      height:270px;
+      object-fit:cover;
+      border-radius:50%;
+      border:6px solid var(--primary);
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    }
+
+    /* SECTION */
+
+    section{
+
+      margin-top:4rem;
+
+    }
+
+    section h2{
+
+      text-align:center;
+      margin-bottom:2rem;
+      color:var(--primary);
+
+    }
+
+    /* CARD GRID */
+
+    .card-grid{
+
+      display:grid;
+      grid-template-columns:
+      repeat(auto-fit,minmax(250px,1fr));
+
+      gap:1.5rem;
+
+    }
+
+    .card{
+
+      background:white;
+      padding:1.5rem;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+      transition:0.3s;
+
+    }
+
+    .card:hover{
+
+      transform:translateY(-5px);
+
+    }
+
+    .card h3{
+
+      color:var(--accent);
+      margin-bottom:0.8rem;
+
+    }
+
+    /* HIGHLIGHTS */
+
+    .highlight{
+
+      background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+      );
+
+      color:white;
+
+    }
+
+    .highlight h3{
+
+      color:white;
+
+    }
+
+    /* FOOTER */
+
+    footer{
+
+      margin-top:5rem;
+      padding:2rem 0;
+      text-align:center;
+      border-top:1px solid #ddd;
+
+    }
+
+    footer a{
+
+      text-decoration:none;
+      margin:0 0.5rem;
+      color:var(--primary);
+
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">Dr Madhukar Shyam</div>
+  <!-- NAVBAR -->
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="conferences.html">Conferences</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <nav class="container-fluid">
+
+    <div class="brand">
+
+      Dr. Madhukar Shyam
+
+    </div>
+
+    <div class="hamburger"
+      onclick="document.querySelector('.menu')
+      .classList.toggle('show')">
+
+      ☰
+
+    </div>
+
+    <div class="menu">
+
+      <a href="index.html">Home</a>
+
+      <a href="academics.html">
+        Academic Details
+      </a>
+
+      <a href="research.html">
+        Research
+      </a>
+
+      <a href="publications.html">
+        Publications
+      </a>
+
+      <a href="experience.html">
+        Experience
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+    </div>
+
   </nav>
-</header>
 
-<section class="hero">
+  <!-- MAIN -->
 
-  <div class="hero-content">
-    <h1>Dr Madhukar Shyam</h1>
+  <main class="container">
 
-    <h2>
-      International Relations | Strategic Affairs |
-      India-China Relations
-    </h2>
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+      <div class="hero-text">
+
+        <h1>
+          Dr. Madhukar Shyam
+        </h1>
+
+        <h2>
+
+          International Relations Scholar |
+          Strategic Affairs Expert |
+          Assistant Professor
+
+        </h2>
+
+        <p>
+
+          Assistant Professor at
+          Christ (Deemed to be University),
+          Delhi NCR.
+
+          Researcher specializing in
+          International Relations,
+          India-China relations,
+          Indo-Pacific geopolitics,
+          maritime security,
+          and strategic affairs.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="assets/files/CV.pdf"
+            class="primary-btn"
+            target="_blank">
+
+            Download CV
+
+          </a>
+
+          <a href="publications.html"
+            class="secondary-btn">
+
+            View Publications
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-image">
+
+        <img src="assets/images/profile.jpg"
+          alt="Dr Madhukar Shyam">
+
+      </div>
+
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+
+    <section>
+
+      <h2>
+        Research Interests
+      </h2>
+
+      <div class="card-grid">
+
+        <div class="card">
+
+          <h3>
+            International Relations
+          </h3>
+
+          <p>
+
+            Theoretical and strategic analysis
+            of global political dynamics and
+            international order.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            India-China Relations
+          </h3>
+
+          <p>
+
+            Research on bilateral relations,
+            strategic competition,
+            and geopolitical developments.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            Maritime Security
+          </h3>
+
+          <p>
+
+            Indo-Pacific maritime strategy,
+            regional security architecture,
+            and naval diplomacy.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            Strategic Affairs
+          </h3>
+
+          <p>
+
+            Research on emerging geopolitical
+            trends, global security,
+            and foreign policy.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CURRENT WORK -->
+
+    <section>
+
+      <h2>
+        Current Academic Engagements
+      </h2>
+
+      <div class="card-grid">
+
+        <div class="card highlight">
+
+          <h3>
+            Christ University
+          </h3>
+
+          <p>
+
+            Teaching International Relations,
+            National Security,
+            Foreign Policy of India and China.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            Policy Research
+          </h3>
+
+          <p>
+
+            Contributed to projects on
+            China’s Comprehensive Power,
+            Bangladesh elections,
+            and India-Bangladesh relations.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            International Conferences
+          </h3>
+
+          <p>
+
+            Presented papers on maritime diplomacy,
+            geopolitical strategy,
+            and Indo-Pacific affairs.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            Strategic Publications
+          </h3>
+
+          <p>
+
+            Published articles in
+            The Indian Express,
+            USI Journal,
+            and strategic policy platforms.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FEATURED PUBLICATIONS -->
+
+    <section>
+
+      <h2>
+        Featured Publications
+      </h2>
+
+      <div class="card-grid">
+
+        <div class="card">
+
+          <h3>
+            India’s Response to Chinese BRI
+          </h3>
+
+          <p>
+
+            Analysing geopolitical implications
+            and regional cooperation dynamics.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            China’s View on the US Role
+            in Indo-Pacific
+          </h3>
+
+          <p>
+
+            Strategic discourse analysis
+            on Indo-Pacific geopolitics.
+
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            Parliamentary Democracy:
+            India and Nepal
+          </h3>
+
+          <p>
+
+            Comparative political analysis
+            published in The Indian Express.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
 
     <p>
-      Assistant Professor at Christ (Deemed to be University),
-      Delhi NCR. Researcher in maritime security,
-      Indo-Pacific geopolitics and foreign policy studies.
+
+      © 2026 Dr. Madhukar Shyam
+
     </p>
 
-    <a href="publications.html" class="btn">
-      View Publications
-    </a>
-  </div>
+    <p>
 
-</section>
+      <a href="mailto:madhukar.shyam@christuniversity.in">
 
-<section class="highlights">
+        Email
 
-  <div class="card">
-    <h3>5+</h3>
-    <p>Years Teaching Experience</p>
-  </div>
+      </a>
 
-  <div class="card">
-    <h3>20+</h3>
-    <p>Research Publications</p>
-  </div>
+      |
 
-  <div class="card">
-    <h3>International</h3>
-    <p>Speaker & Conference Participant</p>
-  </div>
+      <a href="https://scholar.google.com"
+        target="_blank">
 
-</section>
+        Google Scholar
 
-<footer>
-  <p>© 2026 Dr Madhukar Shyam</p>
-</footer>
+      </a>
+
+      |
+
+      <a href="https://www.linkedin.com"
+        target="_blank">
+
+        LinkedIn
+
+      </a>
+
+    </p>
+
+  </footer>
 
 </body>
+
 </html>
